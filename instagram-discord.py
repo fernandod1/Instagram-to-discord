@@ -7,7 +7,7 @@
 # DESCRIPTION:
 # This script executes 2 actions:
 # 1.) Monitors for new image posted in a instagram account (create a cronjob).
-# 2.) If found new image, a bot post new instagram image in a discord channel.
+# 2.) If found new image, a bot posts new instagram image in a discord channel.
 
 # REQUIREMENTS:
 # - Python v3
