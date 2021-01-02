@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Copyright (c) 2020 Fernando
-# Url: https://github.com/dlfernando/
+# Url: https://github.com/fernandod1/
 # License: MIT
 
 # DESCRIPTION:
@@ -27,6 +27,8 @@ import os
 INSTAGRAM_USERNAME = "ladygaga" # Example: ladygaga
 WEBHOOK_URL = ""                # Url to your discord webhook
 DATABASE = "database.txt"
+
+# ----------------------- Do not modify under this line ----------------------- #
 
 def write_to_file(content,filename):
     try:
