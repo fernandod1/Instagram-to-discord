@@ -22,10 +22,10 @@ import os
 # USAGE:
 # Replace INSTAGRAM_USERNAME with username account you want to monitor.
 # Replace WEBHOOK_URL with Discord account webhook url. To know how, just Google: "how to create webhook discord".
-# Replace DATABASE with any finename you want to use as temporary data for checking new photos.
+# Replace DATABASE with any finename you want to use as temporary data for script store last imageID posted.
 
-INSTAGRAM_USERNAME = "ladygaga" # Example: ladygaga
-WEBHOOK_URL = ""                # Url to your discord webhook
+INSTAGRAM_USERNAME = "magdapalimariu" # Example: ladygaga
+WEBHOOK_URL = "https://discord.com/api/webhooks/795736319187484693/grIMrthpHsANsP5bRATqncxTs81qqspV7HdWVr545B1PW9VmUONodUujDlGaed_0xcrJ"                # Url to your discord webhook
 DATABASE = "database.txt"
 
 # ----------------------- Do not modify under this line ----------------------- #
@@ -87,7 +87,11 @@ def webhook(webhook_url,html):
         print("Image successfully posted in Discod, code {}.".format(result.status_code))
 
 def get_instagram_html(INSTAGRAM_USERNAME):
-    html = requests.get("https://www.instagram.com/" + INSTAGRAM_USERNAME + "/?__a=1")
+    headers = {
+        "Host": "www.instagram.com",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11"
+    }
+    html = requests.get("https://www.instagram.com/" + INSTAGRAM_USERNAME + "/feed/?__a=1", headers=headers)
     return html
 
 
