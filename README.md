@@ -1,8 +1,10 @@
 # Instagram to discord post images
 
 This script executes 2 actions:
-1. Monitors for new image posted in a instagram account (create a cronjob).
+
+1. Monitors for new image posted in a instagram account.
 2. If found new image, a bot posts new instagram image in a discord channel.
+3. Repeat after set interval.
 
 ## Requirements:
 
@@ -11,9 +13,11 @@ This script executes 2 actions:
 
 ## Usage:
 
-1. Replace INSTAGRAM_USERNAME with username account you want to monitor.
-2. Replace WEBHOOK_URL with Discord account webhook url. To know how, just Google: "how to create webhook discord".
-3. Replace DATABASE with any finename you want to use as temporary data for script store last imageID posted.
+Environment Variables:
+
+Set IG_USERNAME to username account you want to monitor. Example - ladygaga
+Set WEBHOOK_URL to Discord account webhook url. To know how, just Google: "how to create webhook discord".
+Set TIME_INTERVAL to the time in seconds in between each check for a new post. Example - 1.5, 600 (default=600)
 
 ## Collaborations:
 
