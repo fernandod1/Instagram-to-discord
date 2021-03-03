@@ -23,9 +23,11 @@ import time
 
 # USAGE:
 # Environment Variables
-# Set IG_USERNAME to username account you want to monitor. Example - ladygaga
-# Set WEBHOOK_URL to Discord account webhook url. To know how, just Google: "how to create webhook discord".
-# Set TIME_INTERVAL to the time in seconds in between each check for a new post. Example - 1.5, 600 (default=600)
+
+os.environ['IG_USERNAME'] = 'ladygaga' # Set IG_USERNAME to username account you want to monitor. Example - ladygaga
+os.environ['WEBHOOK_URL'] = 'https://discord.com/api/webhooks/...' # Set WEBHOOK_URL to Discord account webhook url. To know how, just Google: "how to create webhook discord".
+os.environ['TIME_INTERVAL'] = '1.5' # Set TIME_INTERVAL to the time in seconds in between each check for a new post. Example - 1.5, 600 (default=600)
+
 
 INSTAGRAM_USERNAME = os.environ.get('IG_USERNAME')
 
