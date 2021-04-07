@@ -19,8 +19,8 @@ Set environment variables:
 - Set WEBHOOK_URL to Discord account webhook url. To know how, just Google: "how to create webhook discord".
 - Set TIME_INTERVAL to the time in seconds in between each check for a new post. Example: 1.5, 600 (default=600 = 10 minutes)
 
-How to setup enviroment variables:
-Help: https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-environment-variables-in-linux/
+How to setup enviroment variables: 
+https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-environment-variables-in-linux/
 
 ## Collaborations:
 
