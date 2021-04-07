@@ -13,11 +13,14 @@ This script executes 2 actions:
 
 ## Usage:
 
-Environment Variables:
+Set environment variables:
 
 - Set IG_USERNAME to username account you want to monitor. Example: ladygaga
 - Set WEBHOOK_URL to Discord account webhook url. To know how, just Google: "how to create webhook discord".
-- Set TIME_INTERVAL to the time in seconds in between each check for a new post. Example: 1.5, 600 (default=600)
+- Set TIME_INTERVAL to the time in seconds in between each check for a new post. Example: 1.5, 600 (default=600 = 10 minutes)
+
+How to setup enviroment variables:
+Help: https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-environment-variables-in-linux/
 
 ## Collaborations:
 
